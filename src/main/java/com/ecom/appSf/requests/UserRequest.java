@@ -37,4 +37,8 @@ public class UserRequest {
     @Valid
     @NotNull
     private AddressRequest address;
+
+    public UserRequest(@NotBlank(message = "firstName: Ce champ ne doit etre null !") @Size(min = 3, message = "Fn: Cannot be null") String firstName) {
+        this.firstName = firstName;
+    }
 }

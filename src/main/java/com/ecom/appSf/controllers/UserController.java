@@ -80,7 +80,6 @@ public class UserController {
 
 	@DeleteMapping(path = "/{userId}")
 	public ResponseEntity<Object> deleteUser(@PathVariable("userId") String userId) {
-
 		userService.deleteUser(userId);
 
 		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
