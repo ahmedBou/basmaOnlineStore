@@ -38,7 +38,7 @@ public class UserEntity implements Serializable {
 	@OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
 	private AddressEntity address;
 
-	@ManyToOne(mappedBy = "user", cascade = CascadeType.ALL)
+	@ManyToOne
 	private RoleEntity role;
 
 }
