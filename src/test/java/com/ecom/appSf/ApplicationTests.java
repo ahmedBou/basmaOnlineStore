@@ -22,13 +22,13 @@ class ApplicationTests {
 	void contextLoads() {
 		address.setCity("city");
 		address.setCountry("country");
-		userDto.setFirstName("ahmedou");
-		userDto.setLastName("boutayeb");
+		userDto.setFirstName("ahmed");
+		userDto.setLastName("bout");
 		userDto.setAddress(address);
 		userDto.setEmail("ahmed01@gmail.com");
 		userDto.setPassword("user123123");
 
-		userService.updateUser("vLB8ouzOjUDcEZvQmV6o3hr8G5CgXmNc", userDto);
+		userService.updateUser("gIxy8q4yzizCNIhgMWok50667xSMnPAi", userDto);
 	}
 
 
